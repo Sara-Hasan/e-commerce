@@ -184,34 +184,7 @@ if (isset($_POST["add_to_cart"])) {
 										</a>
 									</div>
 								</div>
-
-								<div class="item-slick3" data-thumb="<?php echo 'admin/' . $row["product_nd_color_image"]; ?>">
-									<div class="wrap-pic-w pos-relative">
-										<img src="<?php echo 'admin/' . $row["product_nd_color_image"]; ?>" alt="IMG-PRODUCT">
-
-										<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="<?php echo 'admin/' . $row["product_nd_color_image"]; ?>">
-											<i class="fa fa-expand"></i>
-										</a>
-									</div>
-								</div>
-								<div class="item-slick3" data-thumb="<?php echo 'admin/' . $row["product_thd_color_image"]; ?>">
-									<div class="wrap-pic-w pos-relative">
-										<img src="<?php echo 'admin/' . $row["product_thd_color_image"]; ?>" alt="IMG-PRODUCT">
-
-										<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="<?php echo 'admin/' . $row["product_thd_color_image"]; ?>">
-											<i class="fa fa-expand"></i>
-										</a>
-									</div>
-								</div>
-								<div class="item-slick3" data-thumb="<?php echo 'admin/' . $row["product_fourth_color_image"]; ?>">
-									<div class="wrap-pic-w pos-relative">
-										<img src="<?php echo 'admin/' . $row["product_fourth_color_image"]; ?>" alt="IMG-PRODUCT">
-
-										<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="<?php echo 'admin/' . $row["product_fourth_color_image"]; ?>">
-											<i class="fa fa-expand"></i>
-										</a>
-									</div>
-								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -221,10 +194,10 @@ if (isset($_POST["add_to_cart"])) {
 					<div class="p-r-50 p-t-5 p-lr-0-lg">
 						<form method="POST">
 							<h4 class="mtext-105 cl2 js-name-detail p-b-14">
+								<?php echo $row["product_name"];  ?>
 							</h4>
-
 							<span class="mtext-106 cl2">
-								<?php echo $row["product_price"];  ?>
+								<?php echo '$'.$row["product_price"];  ?>
 							</span>
 
 							<p class="stext-102 cl3 p-t-23">

@@ -29,8 +29,8 @@ include "./admin/includes/connect.php";
 					Shoes
 				</button>
 
-				<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
-					Watches
+				<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".accessories">
+					Accessories
 				</button>
 
 				<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".sales">
@@ -205,30 +205,30 @@ include "./admin/includes/connect.php";
 			?>
 
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item <?php
-																																		if ($val["product_tag"] == "women") {
-																																			echo "women";
-																																		}
-																																		if ($val["product_tag"] == "watches") {
-																																			echo "watches";
-																																		}
-																																		if ($val["product_tag"] == "shoes") {
-																																			echo "shoes";
-																																		}
-																																		if ($val["product_tag"] == "sales") {
-																																			echo "sales";
-																																		}
-																																		if ($val["product_tag"] == "new") {
-																																			echo "new";
-																																		}
-																																		if ($val["product_tag"] == "men") {
-																																			echo "men";
-																																		}
-																																		?>">
-					<!-- Block2 -->
+					if ($val["product_tag"] == "women") {
+						echo "women";
+					}
+					if ($val["product_tag"] == "accessories") {
+						echo "accessories";
+					}
+					if ($val["product_tag"] == "shoes") {
+						echo "shoes";
+					}
+					if ($val["product_tag"] == "sales") {
+						echo "sales";
+					}
+					if ($val["product_tag"] == "new") {
+						echo "new";
+					}
+					if ($val["product_tag"] == "men") {
+						echo "men";
+					}
+					?>">
+<!-- Block2 -->
 					<div class="block2">
 						<a href="product-detail.php?id=<?php echo $val['product_id']; ?>">
 							<div class="block2-pic hov-img0">
-								<img src="<?php echo $val['product_main_image']; ?>" alt="IMG-PRODUCT">
+								<img src="<?php echo 'admin/' . $val['product_main_image']; ?>" alt="IMG-PRODUCT">
 							</div>
 
 							<div class="block2-txt flex-w flex-t p-t-14">
@@ -238,7 +238,7 @@ include "./admin/includes/connect.php";
 									</a>
 
 									<span class="stext-105 cl3">
-										<?php echo $val['product_price']; ?>
+										<?php echo '$' . $val['product_price']; ?>
 									</span>
 								</div>
 
