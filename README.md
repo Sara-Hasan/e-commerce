@@ -1,4 +1,4 @@
-# e-commerce
+# COZA STORE
 
 ## Synopsis
 This Project is an E_commerce website that sells clothes and accessories for women, men, and kids.
@@ -16,15 +16,15 @@ This Project is an E_commerce website that sells clothes and accessories for wom
 3. Javascript.
 4. Bootstrap.
 5. PHP.
-6. MYSQL
+6. MYSQL.
 
 ## Tools
 1. Google Chrome.
 2. Windows 10.
 3. Visual Studio Code.
 4. Git & Github.
-5. XMAPP
-6. Zoom
+5. XMAPP.
+6. Zoom.
 
 ## Installation
 Download Xampp on your computer to view this project.

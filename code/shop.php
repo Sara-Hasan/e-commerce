@@ -223,6 +223,9 @@ include "./admin/includes/connect.php";
 					if ($val["product_tag"] == "men") {
 						echo "men";
 					}
+					if ($val["product_tag"] == "bag") {
+						echo "bag";
+					}
 					?>">
 <!-- Block2 -->
 					<div class="block2">
